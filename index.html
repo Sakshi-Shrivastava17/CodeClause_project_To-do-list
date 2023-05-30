@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="web">
+        <section class="greet">
+            <h2 class="title">
+                What's up, <input type="text" id="name" placeholder="Name here"> </h2>
+        </section>
+        <section class="create-todo">
+            <h3>Create your to-do-list</h3>
+            <form id="new-todo-form">
+                <h4>Write your task</h4>
+                <input type="text" placeholder="e.g. Drink water" name="content" id="content" />
+
+                <h4>Pick the priority</h4>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="category" id="category1" value="Low-priority" />
+                        <span class="bubble Low-priority "></span>
+                        <div>Low priority</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="category" id="category2" value="Medium-priority" />
+                        <span class="bubble Medium-priority"></span>
+                        <div>Medium priority</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="category" id="category3" value="High-priority" />
+                        <span class="bubble High-priority"></span>
+                        <div>High priority</div>
+                    </label>
+                </div>
+
+                <input type="submit" value="Add todo" />
+            </form>
+        </section>
+        <section class="todo-list">
+            <h3>TODO LIST</h3>
+            <div class="list" id="todo-list">
+                <!-- <div class="todo-item done">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble Low-priority"></span>
+                    </label>
+                    <div class="todo-content">
+                        <input type="text" value="make a video">
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+
+                    </div>
+                </div>
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble Medium-priority"></span>
+                    </label>
+                    <div class="todo-content">
+                        <input type="text" value="drink water">
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+
+                    </div>
+                </div>
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble High-priority"></span>
+                    </label>
+                    <div class="todo-content">
+                        <input type="text" value="workout">
+                    </div>
+                    <div class="actions">  
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
